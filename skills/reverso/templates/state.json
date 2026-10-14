@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "user_name": "",
+  "chat_language": "pt-BR",
+  "doc_language": "pt-BR",
+  "mode": null,
+  "phase": null,
+  "doc_level": "essencial",
+  "output_folder": "_reverso_sdd",
+  "triage": {
+    "target": "",
+    "goal": "",
+    "runtime_allowed": false,
+    "authorization": ""
+  },
+  "specs": {
+    "granularity": "",
+    "custom_folders": []
+  },
+  "completed": [],
+  "pending": [],
+  "checkpoints": {},
+  "writer_progress": {
+    "total": 0,
+    "done": []
+  },
+  "evidence_counter": 0,
+  "forward": {
+    "active": null,
+    "queue": [],
+    "paused": []
+  },
+  "autonomous": false,
+  "updated_at": ""
+}
