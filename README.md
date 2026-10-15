@@ -64,6 +64,7 @@ No Claude Code use `/reverso ...`; no Codex e em agentes sem slash command, escr
 | Reescrever o legado em outra stack | `reverso migrar` |
 | Corrigir bug com rastreabilidade | `reverso debug` |
 | Refatorar sem mudar comportamento | `reverso refatorar` |
+| Gerar spec executiva única (`soul.md`: propósito, decisões) | `reverso alma` |
 | Ver o progresso / retomar | `reverso status` · `reverso` |
 
 O Reverso **pausa entre etapas** e espera você digitar `CONTINUAR`. O progresso fica salvo em `.reverso/state.json`:
@@ -109,19 +110,26 @@ npx rea-agents setup
 ## Estrutura do repositório
 
 ```
-skills/reverso/
-├── SKILL.md                     roteador: regras, modos, comandos
-├── references/
-│   ├── 01-triagem.md            qual modo usar
-│   ├── 02-modo-fonte.md         Scout → Archaeologist → Detective → Architect → Writer → Reviewer
-│   ├── 03-modo-artefato.md      roteamento por tipo de alvo (REA + fallback)
-│   ├── 04-evidencias.md         escala de confiança e ledger
-│   ├── 05-clonar-feature.md     observar → especificar → implementar
-│   ├── 06-forward.md            ideação, evolução, emendas, sync
-│   ├── 07-migracao.md           paradigma, curadoria, estratégia, paridade
-│   ├── 08-debug-e-qualidade.md  bugs rastreáveis e refatoração por ROI
-│   └── 09-estado-e-checkpoints.md
-└── templates/                   requirements, design, tasks, ledger, perguntas, relatório, state.json, plan
+.
+├── AGENTS.md                    instruções para agentes instalarem a skill
+├── CREDITS.md                   créditos e atribuições (Reversa e REA)
+├── LICENSE                      licença MIT
+├── README.md                    documentação principal
+├── install.sh                   script de instalação para Linux/macOS
+├── install.ps1                  script de instalação para Windows PowerShell
+└── skills/reverso/
+    ├── SKILL.md                 roteador: regras, modos, comandos
+    ├── references/
+    │   ├── 01-triagem.md        qual modo usar
+    │   ├── 02-modo-fonte.md     Scout → Archaeologist → Detective → Architect → Writer → Reviewer
+    │   ├── 03-modo-artefato.md  roteamento por tipo de alvo (REA + fallback)
+    │   ├── 04-evidencias.md     escala de confiança e ledger
+    │   ├── 05-clonar-feature.md observar → especificar → implementar
+    │   ├── 06-forward.md        ideação, evolução, emendas, sync
+    │   ├── 07-migracao.md       paradigma, curadoria, estratégia, paridade
+    │   ├── 08-debug-e-qualidade.md bugs rastreáveis e refatoração por ROI
+    │   └── 09-estado-e-checkpoints.md
+    └── templates/               requirements, design, tasks, evidence-ledger, questions, confidence-report, state.json, plan
 ```
 
 ## Créditos
